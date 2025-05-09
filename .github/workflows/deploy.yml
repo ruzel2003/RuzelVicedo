@@ -10,6 +10,10 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,7 +30,7 @@ jobs:
         run: npm install
         working-directory: ./react/sample-temp
 
-      - name: Build Vite app
+      - name: Build the app
         run: npm run build
         working-directory: ./react/sample-temp
 
