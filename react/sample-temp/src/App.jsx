@@ -21,7 +21,8 @@ function App() {
     const link = document.querySelector("link[rel='icon']") || document.createElement('link');
     link.type = 'image/svg+xml';
     link.rel = 'icon';
-    link.href = 'src/assets/img/logos/logo.svg'; 
+   link.href = '/RuzelVicedo/vite.svg';
+   link.href = '/RuzelVicedo/logo.svg';
     document.head.appendChild(link);
   }, []);
 
