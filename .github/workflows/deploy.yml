@@ -27,7 +27,7 @@ jobs:
         working-directory: ./react/sample-temp
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: production-build
           path: react/sample-temp/dist
